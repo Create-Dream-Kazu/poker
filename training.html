@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実践トレーニング - ポーカーガイド</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>実践トレーニング</h1>
+    </header>
+
+    <main>
+        <section id="training-scenario">
+            <h2>シチュエーション</h2>
+            <div id="situation-text">
+                <p>ここに状況説明が表示されます。</p>
+            </div>
+
+            <h3>あなたの手札 (ハンド)</h3>
+            <div id="my-hand" class="hand">
+                <!-- JSでカードを表示 -->
+            </div>
+
+            <h3>場のカード (ボード)</h3>
+            <div id="board-cards" class="hand">
+                <!-- JSでカードを表示 -->
+            </div>
+
+            <h3>あなたならどうする？</h3>
+            <div id="action-options">
+                <!-- JSで選択肢ボタンを表示 -->
+            </div>
+            
+            <div id="explanation-box">
+                <!-- 選択肢の解説をここに表示 -->
+            </div>
+
+            <button id="next-scenario-btn">次の問題へ</button>
+        </section>
+
+        <a href="index.html" class="back-link">トップに戻る</a>
+    </main>
+
+    <script src="training.js"></script>
+</body>
+</html>

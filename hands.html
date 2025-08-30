@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>役の強さを学ぼう - ポーカーガイド</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>役の強さを学ぼう</h1>
+    </header>
+
+    <main>
+        <section id="hand-ranks">
+            <h2>役の強さ一覧（上の方が強く、下になればなるほど弱くなる。）</h2>
+            
+            <!-- 役のリストをここに生成 (例：ロイヤルフラッシュ) -->
+            <div class="hand-rank-item">
+                <h3>1. ロイヤルフラッシュ</h3>
+                <p>同じマーク（スート）で「10, J, Q, K, A」の組み合わせ。最強の役！</p>
+                <div class="hand">
+                    <div class="card spade"><span>A</span><span class="suit">♠</span></div>
+                    <div class="card spade"><span>K</span><span class="suit">♠</span></div>
+                    <div class="card spade"><span>Q</span><span class="suit">♠</span></div>
+                    <div class="card spade"><span>J</span><span class="suit">♠</span></div>
+                    <div class="card spade"><span>10</span><span class="suit">♠</span></div>
+                </div>
+            </div>
+
+            <!-- (以下、ストレートフラッシュ、フォーカード...と続く) -->
+             <div class="hand-rank-item">
+                <h3>2. ストレートフラッシュ</h3>
+                <p>同じマークで連続する5枚（例：9♣, 8♣, 7♣, 6♣, 5♣）。</p>
+                <div class="hand">
+                    <div class="card club"><span>9</span><span class="suit">♣</span></div>
+                    <div class="card club"><span>8</span><span class="suit">♣</span></div>
+                    <div class="card club"><span>7</span><span class="suit">♣</span></div>
+                    <div class="card club"><span>6</span><span class="suit">♣</span></div>
+                    <div class="card club"><span>5</span><span class="suit">♣</span></div>
+                </div>
+            </div>
+
+            <div class="hand-rank-item">
+                <h3>3. フォーカード（4カード）</h3>
+                <p>同じ数字のカード4枚（例：A♥, A♣, A♠, A♦, K♣）。</p>
+                <div class="hand">
+                    <div class="card heart"><span>A</span><span class="suit">♥</span></div>
+                    <div class="card club"><span>A</span><span class="suit">♣</span></div>
+                    <div class="card spade"><span>A</span><span class="suit">♠</span></div>
+                    <div class="card diamond"><span>A</span><span class="suit">♦</span></div>
+                    <div class="card club"><span>K</span><span class="suit">♣</span></div>
+                </div>
+            </div>
+
+            <div class="hand-rank-item">
+                <h3>5. フラッシュ</h3>
+                <p>同じマーク5枚（数字はバラバラでOK）（例：A♦, J♦, 9♦, 6♦, 2♦）。</p>
+                <div class="hand">
+                    <div class="card diamond"><span>A</span><span class="suit">♦</span></div>
+                    <div class="card diamond"><span>J</span><span class="suit">♦</span></div>
+                    <div class="card diamond"><span>9</span><span class="suit">♦</span></div>
+                    <div class="card diamond"><span>6</span><span class="suit">♦</span></div>
+                    <div class="card diamond"><span>2</span><span class="suit">♦</span></div>
+                </div>
+            </div>
+
+            <div class="hand-rank-item">
+                <h3>6. ストレート</h3>
+                <p>マークがバラバラでもOK、連続する5枚（例：8♠, 7♦, 6♣, 5♥, 4♠）。</p>
+                <div class="hand">
+                    <div class="card spade"><span>8</span><span class="suit">♠</span></div>
+                    <div class="card diamond"><span>7</span><span class="suit">♦</span></div>
+                    <div class="card club"><span>6</span><span class="suit">♣</span></div>
+                    <div class="card heart"><span>5</span><span class="suit">♥</span></div>
+                    <div class="card spade"><span>4</span><span class="suit">♠</span></div>
+                </div>
+            </div>
+
+            <div class="hand-rank-item">
+                <h3>7. スリーカード</h3>
+                <p>同じ数字のカード3枚（例：Q♥, Q♦, Q♠, 7♣, 2♠）。</p>
+                <div class="hand">
+                    <div class="card heart"><span>Q</span><span class="suit">♥</span></div>
+                    <div class="card diamond"><span>Q</span><span class="suit">♦</span></div>
+                    <div class="card spade"><span>Q</span><span class="suit">♠</span></div>
+                    <div class="card club"><span>7</span><span class="suit">♣</span></div>
+                    <div class="card spade"><span>2</span><span class="suit">♠</span></div>
+                </div>
+            </div>
+
+            <div class="hand-rank-item">
+                <h3>8. ツーペア</h3>
+                <p>2枚＋2枚の同じ数字の組み合わせ（例：J♣, J♠, 5♥, 5♦, 9♣）。</p>
+                <div class="hand">
+                    <div class="card club"><span>J</span><span class="suit">♣</span></div>
+                    <div class="card spade"><span>J</span><span class="suit">♠</span></div>
+                    <div class="card heart"><span>5</span><span class="suit">♥</span></div>
+                    <div class="card diamond"><span>5</span><span class="suit">♦</span></div>
+                    <div class="card club"><span>9</span><span class="suit">♣</span></div>
+                </div>
+            </div>
+
+            <div class="hand-rank-item">
+                <h3>9. ワンペア</h3>
+                <p>同じ数字のカード2枚（例：10♠, 10♦, K♥, 8♣, 3♠）。</p>
+                <div class="hand">
+                    <div class="card spade"><span>10</span><span class="suit">♠</span></div>
+                    <div class="card diamond"><span>10</span><span class="suit">♦</span></div>
+                    <div class="card heart"><span>K</span><span class="suit">♥</span></div>
+                    <div class="card club"><span>8</span><span class="suit">♣</span></div>
+                    <div class="card spade"><span>3</span><span class="suit">♠</span></div>
+                </div>
+            </div>
+
+            <div class="hand-rank-item">
+                <h3>10. ハイカード</h3>
+                <p>最弱の組み合わせ（例：A♠, J♦, 9♣, 6♥, 3♠）。</p>
+                <div class="hand">
+                    <div class="card spade"><span>A</span><span class="suit">♠</span></div>
+                    <div class="card diamond"><span>J</span><span class="suit">♦</span></div>
+                    <div class="card club"><span>9</span><span class="suit">♣</span></div>
+                    <div class="card heart"><span>6</span><span class="suit">♥</span></div>
+                    <div class="card spade"><span>3</span><span class="suit">♠</span></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="quiz-section" class="content-box">
+            <h2>役の知識クイズで力試し！</h2>
+            <p>表示された5枚のカードで完成する、役はどれ？</p>
+            <div id="quiz-display">
+                <!-- クイズのカードはJSでここに表示 -->
+            </div>
+            <div id="quiz-options">
+                <!-- 選択肢はJSでここに表示 -->
+            </div>
+            <button id="quiz-submit-btn">答え合わせ</button>
+            <div id="quiz-result"></div>
+        </section>
+        
+        <a href="index.html" class="back-link">トップに戻る</a>
+    </main>
+    
+    <script src="hands.js"></script>
+</body>
+</html>
